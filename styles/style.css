@@ -1,1 +1,27 @@
-
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0 68px;
+}
+.header__logo-text {
+  font: italic 700 24px / 1.25 var(--font-family);
+  text-decoration: underline;
+  color: #222;
+}
+.header__menu-list {
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+}
+.header__menu-link {
+  font: 400 16px / 1.25 var(--font-family);
+  color: #222;
+  text-decoration: none;
+}
+.header__frame {
+  display: flex;
+  gap: 29px;
+}
+.icon {
+  width: 24px;
+}
