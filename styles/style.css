@@ -1,27 +1,225 @@
+@import url(../fonts/font.css);
+:root {
+  --font-family: "Red Hat Display", sans-serif;
+  --second-family: "Roboto", sans-serif;
+}
+.link {
+  text-decoration: none;
+}
 .header {
   display: flex;
-  justify-content: space-around;
-  padding: 40px 0 68px;
+  padding: 42px 100px 68px;
+  justify-content: space-between;
+  border: 1px solid red;
+  align-items: center;
+  background: #f9f6f5;
 }
 .header__logo-text {
   font: italic 700 24px / 1.25 var(--font-family);
   text-decoration: underline;
   color: #222;
 }
-.header__menu-list {
+.header__navigate-list {
   display: flex;
   gap: 40px;
   list-style-type: none;
 }
-.header__menu-link {
+.header__navigate-link {
   font: 400 16px / 1.25 var(--font-family);
   color: #222;
-  text-decoration: none;
 }
-.header__frame {
+.header__menu {
+  display: flex;
+  gap: 24px;
+}
+.cover {
   display: flex;
   gap: 29px;
+  flex-direction: column;
+  background: #f9f6f5;
+  border: 1px solid red;
+  background-image: url(../images/PSDNukJan.png);
+  background-repeat: no-repeat;
+  height: 609px;
+  background-position: right;
+  padding: 40px 100px 100px 100px;
+  position: relative;
+}
+.cover__title {
+  display: flex;
+  flex-direction: column;
+}
+.cover__title-text {
+  font: 500 56px / 1.25 var(--font-family);
+  color: #000;
+}
+.cover__description {
+  max-width: 560px;
+}
+.cover__description-text {
+  font: 400 20px / 1.6 var(--font-family);
+  color: #555;
+}
+.cover__field {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  max-width: 326px;
+  height: 48px;
+  padding: 8px;
+}
+.cover__field-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font: 400 14px / 1.42857 var(--font-family);
+  color: #999;
+}
+.cover__field-button {
+  width: 32px;
+  height: 32px;
+  align-items: center;
+}
+.cover__button {
+  margin-top: 26px;
+  max-width: 151px;
+  padding: 16px 32px;
+  font: 500 18px / 1.33333 var(--font-family);
+  color: #fff;
+}
+.button-black {
+  background: #402f2c;
+  color: white;
+}
+.cover__arrow {
+  width: 145px;
+  height: 138px;
+  background: #f9f6f5;
+  position: absolute;
+  top: 464px;
+  left: 641px;
+  padding: 49px 25px;
+  display: flex;
+  align-items: center;
+}
+.cover__arrow-image {
+  width: 40px;
+  height: 40px;
+}
+.cover__arrow-button {
+  border: none;
+  background: #f9f6f5;
+}
+.brand {
+  height: 113px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  /* padding: 0 134px; */
+  margin: 130px 134px;
 }
 .icon {
   width: 24px;
+}
+.brand-image {
+  height: 29px;
+}
+.footer {
+  background: #fafafa;
+  border: 1px solid blue;
+}
+.footer__form {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 100px;
+  padding: 103px 0 59px 0;
+  border-bottom: 1px solid #ddd;
+}
+.footer__form-text {
+  font: 500 36px / 1.27778 var(--font-family);
+  color: #222;
+}
+.footer__form-field {
+  display: flex;
+  background: white;
+  align-items: center;
+  padding: 8px;
+}
+.footer__form-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font: 400 14px / 1.42857 var(--font-family);
+  color: #999;
+}
+.footer__form-button {
+  padding: 10px 20px;
+  align-items: center;
+}
+.footer__menu {
+  display: flex;
+  padding: 60px 205px 52px;
+  gap: 194px;
+  align-items: center;
+}
+.footer__description-header {
+  font: italic 700 40px / 1.25 var(--font-family);
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #222;
+}
+.footer__description {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+.footer__description-text {
+  font: 400 18px / 1.77778 var(--font-family);
+  color: #555;
+}
+.footer__navigate {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+.footer__navigate-header {
+  font: 500 20px / 1.2 var(--font-family);
+  color: #222;
+}
+.footer__navigate-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style-type: none;
+}
+.footer__navigate-link {
+  text-decoration: none;
+  font: 400 16px / 1.25 var(--font-family);
+  color: #222;
+}
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+.footer__contact-header {
+  font: 500 20px / 1.2 var(--font-family);
+  color: #222;
+}
+.footer__contact-text {
+  font: 400 16px / 1.25 var(--font-family);
+  color: #222;
+}
+.footer__contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer__messenger-image {
+  width: 13px;
+}
+.footer__contact-messenger {
+  display: flex;
+  gap: 26px;
 }

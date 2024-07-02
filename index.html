@@ -11,88 +11,176 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__logo">
+      <a class="header__logo link">
         <h1 class="header__logo-text">Dudeshape</h1>
       </a>
-      <nav class="header__menu">
-        <ul class="header__menu-list">
-          <li class="header__menu-item">
-            <a href="#" class="header__menu-link">Home</a>
+      <nav class="header__navigate">
+        <ul class="header__navigate-list">
+          <li class="header__navigate-item">
+            <a href="#" class="header__navigate-link link">Home</a>
           </li>
           <li>
-            <a href="#" class="header__menu-link">Products</a>
+            <a href="#" class="header__navigate-link link">Products</a>
           </li>
           <li>
-            <a href="#" class="header__menu-link">About Us</a>
+            <a href="#" class="header__navigate-link link">About Us</a>
           </li>
           <li>
-            <a href="#" class="header__menu-link">Contact Us</a>
+            <a href="#" class="header__navigate-link link">Contact Us</a>
           </li>
         </ul>
       </nav>
-      <div class="header__frame">
-        <a href="#" class="header__frame-link">
-          <!-- frame это не правильное именнование  -->
+      <div class="header__menu">
+        <a href="#" class="header__menu-link link">
           <img
             src="./images/Profile.svg"
             alt="Иконка личного кабинета"
             class="icon"
           />
         </a>
-        <a href="#" class="header__frame-link">
+        <a href="#" class="header__menu-link link">
           <img src="./images/Buy.svg" alt="Иконка корзины" class="icon" />
         </a>
-        <a href="#" class="header__frame-link">
+        <a href="#" class="header__menu-link link">
           <img src="./images/Frame.svg" alt="Иконка Frame" class="icon" />
         </a>
       </div>
     </header>
-    <main>
+    <main class="content">
       <div class="cover">
-        <h2>Get Your Best Cosmetic Products Here</h2>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy
-        </p>
-        <input />
-        <button>Shop Now</button>
-      </div>
-    </main>
-    <footer class="footer">
-      <div>
-        <p>Subscribe to Get Our Letest News</p>
-        <div>
-          <input type="text" />
-          <button>Subscribe</button>
-        </div>
-      </div>
-      <div>
-        <div>
-          <a>
-            <h1>Dudeshape</h1>
-          </a>
-          <p>
+        <h2 class="cover__title">
+          <span class="cover__title-text">Get Your Best Cosmetic</span>
+          <span class="cover__title-text">Products Here</span>
+        </h2>
+        <div class="cover__description">
+          <p class="cover__description-text">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy
           </p>
         </div>
-        <nav>
-          <h2>Quick Link</h2>
-          <ul>
-            <li>Home</li>
-            <li>Products</li>
-            <li>About Us</li>
+
+        <div class="cover__field">
+          <input
+            type="text"
+            class="cover__field-input"
+            placeholder="Search..."
+          />
+          <button class="cover__field-button button-black">
+            <img src="./images/Search.svg" alt="иконка лупы" />
+          </button>
+        </div>
+
+        <button class="cover__button button-black">Shop Now</button>
+        <div class="cover__arrow">
+          <button class="cover__arrow-button">
+            <img
+              class="cover__arrow-image"
+              src="./images/Arrow - left 3.svg"
+              alt="Стрелка в лево"
+            />
+          </button>
+          <button class="cover__arrow-button">
+            <img
+              class="cover__arrow-image"
+              src="./images/Arrow - Right 2.svg"
+              alt="Стрелка в право"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="brand">
+        <img
+          src="./images/Airbnb Logo.svg"
+          alt="логотип Airbnb "
+          class="brand-image"
+        />
+        <img
+          src="./images/Hubspot Logo.svg"
+          alt="логотип Hubspot"
+          class="brand-image"
+        />
+        <img
+          src="./images/Google Logo.svg"
+          alt="логотип Google"
+          class="brand-image"
+        />
+        <img
+          src="./images/Microsoft Logo.svg"
+          alt="логотип Microsoft"
+          class="gg"
+        />
+        <img
+          src="./images/Walmart Logo.svg"
+          alt="логотип Walmart"
+          class="brand-image"
+        />
+        <img
+          src="./images/FedEx Logo.svg"
+          alt="логотип FedEx"
+          class="brand-image"
+        />
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__form">
+        <p class="footer__form-text">Subscribe to Get Our Letest News</p>
+        <div class="footer__form-field">
+          <input
+            type="text"
+            class="footer__form-input"
+            placeholder="Enter email"
+          />
+          <button class="footer__form-button button-black">Subscribe</button>
+        </div>
+      </div>
+      <!--  -->
+      <div class="footer__menu">
+        <div class="footer__description">
+          <a href="#" class="footer__description-link">
+            <h1 class="footer__description-header">Dudeshape</h1>
+          </a>
+          <p class="footer__description-text">
+            Lorem Ipsum is simply dummy text of the<br />
+            printing and typesetting industry. Lorem <br />
+            Ipsum has been the industry's standard <br />dummy
+          </p>
+        </div>
+        <nav class="footer__navigate">
+          <h2 class="footer__navigate-header">Quick Link</h2>
+          <ul class="footer__navigate-list">
+            <li class="footer__navigate-ilem">
+              <a href="#" class="footer__navigate-link">Home</a>
+            </li>
+            <li class="footer__navigate-ilem">
+              <a href="#" class="footer__navigate-link"> Products</a>
+            </li>
+            <li class="footer__navigate-ilem">
+              <a href="#" class="footer__navigate-link"> About Us</a>
+            </li>
           </ul>
         </nav>
-        <div>
-          <h2>Contact Us</h2>
-          <div>
-            <p>oyasimnaeem@email.com</p>
-            <p>+123456789</p>
-            <div>
-              <img src="#" alt="#" />
-              <img src="#" alt="#" />
-              <img src="#" alt="#" />
+        <div class="footer__contact">
+          <h2 class="footer__contact-header">Contact Us</h2>
+          <div class="footer__contact-info">
+            <p class="footer__contact-text">oyasimnaeem@email.com</p>
+            <p class="footer__contact-text">+123456789</p>
+            <div class="footer__contact-messenger">
+              <img
+                src="./images/facebook 1.svg"
+                alt="иконка фейсбука"
+                class="footer__messenger-image"
+              />
+              <img
+                src="./images/twitter 1.svg"
+                alt="иконка твитера"
+                class="footer__messenger-image"
+              />
+              <img
+                src="./images/instagram 1.svg"
+                alt="иконка инстограмма"
+                class="footer__messenger-image"
+              />
             </div>
           </div>
         </div>
