@@ -10,7 +10,6 @@
   display: flex;
   padding: 42px 100px 68px;
   justify-content: space-between;
-  border: 1px solid red;
   align-items: center;
   background: #f9f6f5;
 }
@@ -37,7 +36,6 @@
   gap: 29px;
   flex-direction: column;
   background: #f9f6f5;
-  border: 1px solid red;
   background-image: url(../images/PSDNukJan.png);
   background-repeat: no-repeat;
   height: 609px;
@@ -116,7 +114,6 @@
   border-bottom: 1px solid #eee;
   display: flex;
   align-items: center;
-  /* padding: 0 134px; */
   margin: 130px 134px;
 }
 .icon {
@@ -125,9 +122,178 @@
 .brand-image {
   height: 29px;
 }
+.product__header-title {
+  font: 500 56px / 1.25 var(--font-family);
+  color: #000;
+}
+.product__description-text {
+  font: 400 20px / 1.6 var(--font-family);
+  color: #555;
+  max-width: 714px;
+}
+.product__description-link {
+  font: 500 24px / 1.25 var(--font-family);
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #222;
+}
+.product__description {
+  display: flex;
+  justify-content: space-between;
+}
+.product__header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 100px;
+  margin-bottom: 60px;
+}
+.description__link-image {
+  width: 24px;
+}
+.product__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px 130px;
+}
+.product__list-card {
+  max-width: 600px;
+  max-height: 812px;
+}
+.product__list-title {
+  font: 500 40px / 1.5 var(--font-family);
+  color: #222;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  margin: 20px 32px 16px;
+}
+.product__list-text {
+  font: 400 20px / 1.6 var(--font-family);
+  color: #555;
+  margin-bottom: 48px;
+  margin: 0 32px 48px;
+}
+.product__list-button {
+  padding: 16px 32px;
+  font: 500 18px / 1.33333 var(--font-family);
+  color: #fff;
+}
+.product__list-footer {
+  margin: 0 32px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product__list-item {
+  display: flex;
+  gap: 24px;
+}
+.button-white {
+  background-color: white;
+  color: #402f2c;
+  border: 1px solid rgba(104, 90, 82, 0.46);
+}
+.product__list-price {
+  font: 500 30px / 1.06667 var(--font-family);
+  text-align: right;
+  color: #222;
+}
+.statistics {
+  background: #fdf8f5;
+  display: flex;
+  justify-content: space-between;
+  padding: 58px 175px;
+  margin-bottom: 130px;
+}
+.statistics__title {
+  font: 700 56px / 1.25 var(--font-family);
+  color: #222;
+}
+.statistics__text {
+  font: 400 24px / 1.25 var(--font-family);
+  color: #555;
+}
+.statistics__characteristics,
+.statistics__sales,
+.statistics__customar {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.posts__card-title {
+  font: 500 56px / 1.25 var(--font-family);
+  color: #000;
+  margin-bottom: 20px;
+}
+.posts__card-text {
+  font: 400 20px / 1.6 var(--font-family);
+  color: #555;
+  margin-bottom: 20px;
+}
+.posts__card-button {
+  font: 500 18px / 1.33333 var(--font-family);
+  color: #fff;
+  padding: 16px 32px;
+  margin-top: 30px;
+}
+
+.posts__card-image {
+  width: 600px;
+  height: 600px;
+}
+.posts__card {
+  display: flex;
+  padding: 0 100px 130px;
+  gap: 32px;
+  align-items: center;
+}
+.posts__card-info {
+  display: flex;
+  flex-direction: column;
+}
+.posts__card-header {
+  font: 500 30px / 1.33333 var(--font-family);
+  color: #222;
+  margin-bottom: 12px;
+}
+.posts__card-stars {
+  width: 168px;
+  height: 24px;
+  margin-bottom: 43px;
+}
+.posts__card-quote {
+  font: 400 20px / 1.6 var(--font-family);
+  color: #555;
+  margin-bottom: 79px;
+}
+.posts__card-name {
+  font: 500 30px / 1.33333 var(--font-family);
+  color: #222;
+  margin-bottom: 10px;
+}
+.posts__card-profession {
+  font: 400 20px / 1.2 var(--font-family);
+  color: #555;
+  margin-bottom: 22px;
+}
+.posts__card-right {
+  border-radius: 100%;
+  stroke-width: 1px;
+  stroke: #6fb587;
+}
+.posts__card-left {
+  border-radius: 100%;
+  stroke-width: 1px;
+  border: 1px solid rgba(111, 181, 135, 0.15);
+  fill: rgba(111, 181, 135, 0.15);
+  /* stroke: rgba(111, 181, 135, 0.15); */
+}
+.posts__button-image {
+  width: 16px;
+  height: 16px;
+}
 .footer {
   background: #fafafa;
-  border: 1px solid blue;
 }
 .footer__form {
   display: flex;
